@@ -1,5 +1,5 @@
 import { View, Switch, Image, Text } from "@tarojs/components";
-// import setup from '../../assets/setup.png'
+
 
 interface ConBoolProps {
   title: string;
@@ -8,7 +8,6 @@ interface ConBoolProps {
 }
 
 function ControlBool(props: ConBoolProps) {
-//   const setup = "../../assets/setup.png";
   return (
     <View
       style={{
@@ -46,7 +45,6 @@ function ControlBool(props: ConBoolProps) {
           style={{
             height: 40,
             display: "flex",
-            // justifyContent: "center",
             alignItems: "center"
           }}
         >
@@ -56,20 +54,19 @@ function ControlBool(props: ConBoolProps) {
           style={{
             height: 40,
             display: "flex",
-            // justifyContent: "center",
             alignItems: "center"
           }}
         >
-          <Text style={{color: "#a8a8a8"}}>{props.subtitle}</Text>
+          <Text style={{ color: "#a8a8a8" }}>{props.subtitle}</Text>
         </View>
       </View>
       <Switch
-        style={{ position: "absolute", right: 5,top:24}}
+        style={{ position: "absolute", right: 5, top: 24 }}
         checked={props.switch}
         onChange={() => {
           props.switch = props.switch === true ? false : true;
         }}
-        color={'#2789fb'}
+        color={"#2789fb"}
       ></Switch>
     </View>
   );

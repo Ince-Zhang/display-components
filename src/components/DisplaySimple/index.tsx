@@ -32,9 +32,6 @@ function DisplaySimple(props: DisplaySimpleProps) {
             style={{
               display: "flex",
               flexDirection: "column",
-              //   justifyContent: "center",
-              //   alignItems: "center",
-              //   margin:10,
               borderBottomWidth:
                 fundis.name !== props.items[props.items.length - 1].name
                   ? props.isParallel

@@ -23,14 +23,10 @@ const [curEnum,usecurEnum]=useState(resProps.range[0])
         flexDirection: "row",
         width: "100%",
         height: 80,
-        // justifyContent:'center',
         alignItems: "center",
         position: "relative"
-        // marginLeft:20,
-        // marginRight:20
       }}
     >
-      {/* <Picker mode="selector" range={[]} onChange={()=>{}}></Picker> */}
       <Picker 
       onChange={(e)=>{
 usecurEnum(resProps.range[e.detail.value]);
@@ -63,11 +59,8 @@ usecurEnum(resProps.range[e.detail.value]);
           <Image
             src={require("../../assets/arrow.png")}
             style={{
-              
-
               height: 16,
               width: 16,
-
             }}
           ></Image>
           </View>

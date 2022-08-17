@@ -20,7 +20,6 @@ function DisplayDetail(props: DisplayDetailProps) {
         flexDirection: "column",
         justifyContent: "center",
         alignContent:'center',
-      
         height: 210
       }}
       {...restProps}
@@ -33,7 +32,6 @@ function DisplayDetail(props: DisplayDetailProps) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-
         }}
       >
         <Text

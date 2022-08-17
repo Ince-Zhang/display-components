@@ -1,11 +1,6 @@
 import { View, Slider, Image, Text, SliderProps } from "@tarojs/components";
 import {useState} from "react"
 
-interface Item {
-  
-  //   subtitle?: string;
-}
-
 interface ConSliderProps extends SliderProps {
   title: string;
 }
@@ -13,7 +8,6 @@ interface ConSliderProps extends SliderProps {
 function ControlSlider(props: ConSliderProps) {
   const { title,value, onChange, ...resProps } = props;
   const[useValue,setuseValue]=useState(value);
-
 
   return (
     <View
@@ -78,18 +72,13 @@ function ControlSlider(props: ConSliderProps) {
       </View>
       <Slider
         value={useValue}
-        // min={props.min}
-        // max={props.max}
-        // step={props.step}
-        // color={props.color}
-        // backgroundColor={props.backgroundColor}
-// showValue={true}
+
 onChanging={(e)=>{
-    // props.value=e.detail.value;
+
     setuseValue(e.detail.value);
     onChange?.(e)
 
-    // console.log(props.value);
+
 }}
 onChange={(e)=>{
     setuseValue(e.detail.value);
